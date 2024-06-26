@@ -1,0 +1,18 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #0b2429
+  Yellow:#F3AC3C
+*/
+
+.box {
+  background-color: #0b2429;
+}
+
+.triangle {
+  width: 140px;
+  height: 140px;
+  border: 70px solid #F3AC3C;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}

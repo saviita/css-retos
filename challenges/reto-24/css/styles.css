@@ -1,0 +1,40 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #F3AC3C
+  Green: #1A4341
+  Olive: #998235
+*/
+
+.box {
+  background-color: #f3ac3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  background-color: #1A4341;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.switch::before {
+  content: '';
+  background-color: #998235;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+}
+
+.switch::after {
+  content: '';
+  background-color: #f3ac3c;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 150px;
+  left: 50px;
+}

@@ -1,0 +1,33 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #0b2429
+  Leaf yellow: #f3ac3c
+  Leaf green: #998235
+*/
+
+.box {
+  background-color: #0b2429;
+}
+
+.leaf {
+  background-color: #f3ac3c;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100% 0 100% 100%;
+  margin: 150px 80px;
+  box-shadow: 60px -60px #998235;
+}
+
+.leaf::before {
+  content: '';
+  background-color: #f3ac3c;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: -120px;
+  left: 120px;
+  z-index: -1;
+}

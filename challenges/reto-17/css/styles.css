@@ -1,0 +1,45 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background:#222730
+  Blue: #4CAAB3
+  Grey: #393E46
+*/
+
+.box {
+  background-color: #222730;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  background-color: #4CAAB3;
+  position: relative;
+  width: 400px;
+  height: 150px;
+}
+
+.shape::after {
+  content: '';
+  background-color: #4CAAB3;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  rotate: 45deg;
+  border: 50px solid #222730;
+  left: 75px;
+  top: -50px;
+}
+
+.shape::before {
+  content: '';
+  background-color: #393E46;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50px;
+  left: 175px;
+  z-index: 1;
+}
